@@ -15,7 +15,7 @@ void NormalScene:: showGreeting()
 
 void NormalScene :: showChoose()
 {
-    cout << "Please input number to choose game level,as following:" << endl;
+    cout << "Please input a number to choose game level,as following:" << endl;
     cout << "easy(1)   medium(2)   difficulty(3)" << endl;
 }
 
@@ -62,10 +62,29 @@ void NormalScene :: printRow(int row)
     cout << "| ";
     for(int col = 0; col < _size_; ++col)
     {
-        std::cout << Color::Modifier(_board_[row * _size_ + col].color) 
-                  << _board_[row * _size_ + col].value 
-                  << Color::Modifier(Color::RESET) 
-                  << " | ";
+        if(_board_[row * _size_ + col].warning)
+        {
+            std::cout << Color::Modifier(Color :: FG_LIGHT_RED);
+        }
+        else
+        {
+            std::cout << Color::Modifier(_board_[row * _size_ + col].color);
+        }
+
+        cout << _board_[row * _size_ + col].value 
+             << Color::Modifier(Color::RESET) 
+             << " | ";
     }
     cout << endl;
+}
+
+void NormalScene :: set(point_t key, char value, Color :: Code c)
+{
+    _board_[key.x * _size_ + key.y].value = value;
+    _board_[key.x * _size_ + key.y].color = c;
+}
+
+void NormalScene :: setColor(point_t key, Color :: Code c)
+{
+    _board_[key.x * _size_ + key.y].color = c;
 }

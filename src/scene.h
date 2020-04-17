@@ -2,21 +2,36 @@
 #define _SCENE_H_
 
 #include<string>
+#include<vector>
+
+#include "common.h"
+
+using namespace std;
 
 class BaseScene
 {
-    virtual void show() = 0;
-    ~BaseScene();
+public:
+    virtual ~BaseScene();
 };
 
 
 class NormalScene : public BaseScene
 {
-    virtual void show();
+public:
+    NormalScene(int size);
+    void showGreeting();
+    void showChoose();
+    void showAll();
+    void changeCursor(const point_t & curPoint);
+    virtual ~NormalScene();
 
-    void show(const string & );
+private:
+    int _size_;
+    point_t _cursor_; //当前的光标位置
+    vector<boardPoint_t> _board_; //棋盘
 
-    void show(int i);
+    void printUnderLine(int line = -1);
+    void printRow(int row);
 };
 
 
