@@ -17,21 +17,24 @@ typedef struct stLockPoint : public stPoint
 {
     bool valid;
 
-    stLockPoint() = default;
+    stLockPoint() : point_t(), valid(false){}
     stLockPoint(const point_t &p, bool b) : point_t(p), valid(b){}
 
 } lockPoint_t;
 
-typedef struct stWarningPoint : public lockPoint_t
+typedef struct stWarningPoint
 {
+    bool valid;
     char value;
-} warningPoint;
+    point_t key;
+} warningPoint_t;
 
 typedef struct stBoardPoint
 {
     char value;
     bool warning;
     Color :: Code color;
+    stBoardPoint() : value(' '), warning(false){};
 } boardPoint_t;
 
 

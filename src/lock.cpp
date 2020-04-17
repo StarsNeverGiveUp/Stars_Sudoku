@@ -23,6 +23,8 @@ void BaseLock :: init(const string& s)
  * 列锁函数
  */
 
+
+
 void ColumnLock :: set(point_t key, char value)
 {
     _block_[key.y * _size_ + value - '1'] = lockPoint_t(key, true);
@@ -41,6 +43,7 @@ lockPoint_t ColumnLock :: get(point_t key, char value)
 /**
  * 行锁函数
  */
+
 
 void RowLock :: set(point_t key, char value)
 {

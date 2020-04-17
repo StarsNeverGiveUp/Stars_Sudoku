@@ -7,7 +7,7 @@
 class BaseController
 {
 public:
-    virtual ~BaseController();
+    virtual ~BaseController(){}
 };
 
 class NormalController : public BaseController
@@ -16,22 +16,29 @@ public:
     
     friend istream& operator>>(istream & in, NormalController& controller);
    
-    NormalController(NormalScene & scene, NormalLogic & logic);
+    NormalController(NormalScene & scene, NormalLogic & logic) : _scene_(scene), _logic_(logic), _size_(9){}
 
     void doSomething();
     void show();
+    void init();
+    void getCom(char key)
+    {
+        _oper_ = key;
+    }
 
     
-    virtual ~NormalController();
+    virtual ~NormalController(){}
 
 private:
     int _size_;
     NormalLogic & _logic_;
     NormalScene & _scene_;
     point_t _cursor_;
-    char oper;
+    warningPoint_t _warning_;
+    char _oper_;
 
-    void setValue(int value);
+    void set(char value);
+    void undoWarning();
 };
 
 #endif

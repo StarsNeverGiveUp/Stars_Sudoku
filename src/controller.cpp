@@ -18,11 +18,11 @@ void NormalController ::doSomething()
     {
         switch (_oper_)
         {
-        case 'w':
+        case 's':
             _cursor_.y = (_cursor_.y + 1) % _size_;
             _scene_.changeCursor(_cursor_);
             break;
-        case 's':
+        case 'w':
             _cursor_.y = (_cursor_.y - 1 + _size_) % _size_;
             _scene_.changeCursor(_cursor_);
             break;
@@ -34,6 +34,8 @@ void NormalController ::doSomething()
             _cursor_.x = (_cursor_.x - 1 + _size_) % _size_;
             _scene_.changeCursor(_cursor_);
             break;
+        case 0x1B:
+            exit(0);
         default:
             break;
         }

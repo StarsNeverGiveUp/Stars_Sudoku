@@ -7,7 +7,7 @@
 class BaseLogic
 {
 public:
-    virtual ~BaseLogic();
+    virtual ~BaseLogic(){}
 };
 
 
@@ -21,7 +21,7 @@ public:
     bool isChangeable(point_t key, char value);
     const string & getInit();
     
-    virtual ~NormalLogic();
+    virtual ~NormalLogic(){}
 
 private:
 

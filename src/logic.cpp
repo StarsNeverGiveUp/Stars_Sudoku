@@ -3,8 +3,7 @@
 #include "map"
 #include "utility.h"
 
-
-NormalLogic :: NormalLogic(int choice, int size = 9) 
+NormalLogic :: NormalLogic(int choice, int size) 
 : level(choice), _size_(size), _blank_(0), _init_(),
   Rlock(size), Clock(size), Block(size), Chlock(size)
 {
@@ -129,4 +128,9 @@ void NormalLogic :: initLock()
     Rlock.init(_init_);
     Block.init(_init_);
     Chlock.init(_init_);
+}
+
+const string & NormalLogic :: getInit()
+{
+    return _init_;
 }

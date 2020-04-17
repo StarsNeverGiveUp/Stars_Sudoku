@@ -11,19 +11,23 @@ using namespace std;
 class BaseScene
 {
 public:
-    virtual ~BaseScene();
+    virtual ~BaseScene(){}
 };
 
 
 class NormalScene : public BaseScene
 {
 public:
-    NormalScene(int size);
+    NormalScene(int size) : _size_(size), _board_(vector<boardPoint_t>(size * size)){}
     void showGreeting();
     void showChoose();
     void showAll();
     void changeCursor(const point_t & curPoint);
-    virtual ~NormalScene();
+    void init(const string &s);
+    void set(point_t key, char value, Color :: Code c= Color :: FG_GREEN);
+    void setWarning(point_t key, bool w);
+    void erase(point_t key);
+    virtual ~NormalScene(){}
 
 private:
     int _size_;

@@ -53,8 +53,8 @@ void NormalScene :: printUnderLine(int line)
         {
             cout << "----";
         }
-        cout << "-" << endl;
     }
+    cout << "-" << endl;
 }
 
 void NormalScene :: printRow(int row)
@@ -84,7 +84,30 @@ void NormalScene :: set(point_t key, char value, Color :: Code c)
     _board_[key.x * _size_ + key.y].color = c;
 }
 
-void NormalScene :: setColor(point_t key, Color :: Code c)
+void NormalScene :: setWarning(point_t key, bool w)
 {
-    _board_[key.x * _size_ + key.y].color = c;
+    _board_[key.x * _size_ + key.y].warning = w;
+}
+
+void NormalScene :: erase(point_t key)
+{
+    _board_[key.x * _size_ + key.y].value = ' ';
+}
+
+void NormalScene :: init(const string & s)
+{
+    int length = s.size();
+
+    point_t key;
+
+    for(int i = 0; i < length; ++i)
+    {
+        key.x = i / _size_;
+        key.y = i % _size_;
+
+        if(s[i] != ' ')
+        {
+            set(key, s[i]);
+        }
+    }
 }

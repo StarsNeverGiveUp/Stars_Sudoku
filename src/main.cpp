@@ -6,28 +6,48 @@
 #include "scene.h"
 #include "logic.h"
 #include "controller.h"
+#include "common.h"
+
+#include <conio.h>
+
+static const int SIZE = 9;
 
 using namespace std;
 
+istream& operator>>(istream & in, NormalController& controller)
+{
+    in >> controller._oper_;
+    return in;
+}
+
 int main(int argc, char* argv[])
 {
-    NormalScene scene;
+    NormalScene scene(SIZE);
     
-
     scene.showGreeting();
     system("pause");
     scene.showChoose();
 
     int choice = 0;
 
-    while(!(cin >> choice))
+    while(!(cin >> choice) || choice < 1 || choice > 3)
     {
-        cout << "please input a valid value!"
+        cout << "please input a valid value!" << endl;
         scene.showChoose();
     }
+
+    NormalLogic logic(choice);
+    NormalController controller(scene, logic);
+
+    controller.init();
     
-    NormalLogic logic(scene, choice);
-    NormalController controller(logic);
+    controller.show();
+   
+    while(1)
+    {
+        controller.getCom(getch());
+        controller.doSomething();
+    }
 
 
 
