@@ -45,7 +45,7 @@ int main(int argc, char* argv[])
    
     while(1)
     {
-        controller.getCom(getch());
+        controller.getCom(_getch());
         controller.doSomething();
     }
 

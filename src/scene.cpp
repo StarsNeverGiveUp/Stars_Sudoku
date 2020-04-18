@@ -80,18 +80,23 @@ void NormalScene :: printRow(int row)
 
 void NormalScene :: set(point_t key, char value, Color :: Code c)
 {
-    _board_[key.x * _size_ + key.y].value = value;
-    _board_[key.x * _size_ + key.y].color = c;
+    _board_[key.y * _size_ + key.x].value = value;
+    _board_[key.y * _size_ + key.x].color = c;
+}
+
+char NormalScene::get(point_t key)
+{
+    return _board_[key.y * _size_ + key.x].value;
 }
 
 void NormalScene :: setWarning(point_t key, bool w)
 {
-    _board_[key.x * _size_ + key.y].warning = w;
+    _board_[key.y * _size_ + key.x].warning = w;
 }
 
 void NormalScene :: erase(point_t key)
 {
-    _board_[key.x * _size_ + key.y].value = ' ';
+    _board_[key.y * _size_ + key.x].value = ' ';
 }
 
 void NormalScene :: init(const string & s)
@@ -102,8 +107,8 @@ void NormalScene :: init(const string & s)
 
     for(int i = 0; i < length; ++i)
     {
-        key.x = i / _size_;
-        key.y = i % _size_;
+        key.y = i / _size_;
+        key.x = i % _size_;
 
         if(s[i] != ' ')
         {

@@ -4,7 +4,7 @@
 #include "utility.h"
 
 NormalLogic :: NormalLogic(int choice, int size) 
-: level(choice), _size_(size), _blank_(0), _init_(),
+: level(choice), _size_(size), _blank_(0),
   Rlock(size), Clock(size), Block(size), Chlock(size)
 {
     switch(choice)
@@ -38,6 +38,11 @@ NormalLogic :: NormalLogic(int choice, int size)
      */
 
     vector<char> mapping(_size_);
+
+    for (int i = 0; i < 9; ++i)
+    {
+        mapping[i] = ('a' + i);
+    }
     map<char, char> hash_map;
 
     for(int i = 0; i < _size_; ++i)
@@ -52,7 +57,7 @@ NormalLogic :: NormalLogic(int choice, int size)
     {
         _init_ += hash_map[map_pattern[i]];
     }
-
+    
     randomErase();
 
     initLock();
@@ -61,7 +66,7 @@ NormalLogic :: NormalLogic(int choice, int size)
 
 bool NormalLogic :: isChangeable(point_t key, char value)
 {
-    return Chlock.get(key, value).valid;
+    return !Chlock.get(key, value).valid;
 }
 
 void NormalLogic :: set(point_t key, char value)
@@ -69,6 +74,18 @@ void NormalLogic :: set(point_t key, char value)
     Clock.set(key, value);
     Rlock.set(key, value);
     Block.set(key, value);
+    return;
+}
+
+void NormalLogic::erase(point_t key, char value)
+{
+    if (value == ' ')
+    {
+        return;
+    }
+    Clock.erase(key, value);
+    Rlock.erase(key, value);
+    Block.erase(key, value);
     return;
 }
 
@@ -117,8 +134,9 @@ void NormalLogic ::  randomErase()
     for(int i = 0; i < _blank_; ++i)
     {
         int r = random(0, v.size() - 1);
+        _init_[v[r]] = ' ';
         v.erase(v.begin() + r);
-        _init_[r] = ' ';
+        
     }
 }
 

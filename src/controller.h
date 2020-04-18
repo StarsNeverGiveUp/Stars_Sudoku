@@ -16,11 +16,12 @@ public:
     
     friend istream& operator>>(istream & in, NormalController& controller);
    
-    NormalController(NormalScene & scene, NormalLogic & logic) : _scene_(scene), _logic_(logic), _size_(9){}
+    NormalController(NormalScene & scene, NormalLogic & logic) : _oper_(0),_scene_(scene), _logic_(logic), _size_(9){}
 
     void doSomething();
     void show();
     void init();
+    
     void getCom(char key)
     {
         _oper_ = key;
@@ -38,6 +39,7 @@ private:
     char _oper_;
 
     void set(char value);
+    void erase();
     void undoWarning();
 };
 

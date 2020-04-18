@@ -25,6 +25,7 @@ public:
     void changeCursor(const point_t & curPoint);
     void init(const string &s);
     void set(point_t key, char value, Color :: Code c= Color :: FG_GREEN);
+    char get(point_t key);
     void setWarning(point_t key, bool w);
     void erase(point_t key);
     virtual ~NormalScene(){}

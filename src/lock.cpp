@@ -9,8 +9,8 @@ void BaseLock :: init(const string& s)
 
     for(int i = 0; i < length; ++i)
     {
-        key.x = i / _size_;
-        key.y = i % _size_;
+        key.y = i / _size_;
+        key.x = i % _size_;
 
         if(s[i] != ' ')
         {
@@ -27,17 +27,17 @@ void BaseLock :: init(const string& s)
 
 void ColumnLock :: set(point_t key, char value)
 {
-    _block_[key.y * _size_ + value - '1'] = lockPoint_t(key, true);
+    _block_[key.x * _size_ + value - '1'] = lockPoint_t(key, true);
 }
 
 void ColumnLock :: erase(point_t key, char value)
 {
-    _block_[key.y * _size_ + value - '1'].valid = false;
+    _block_[key.x * _size_ + value - '1'].valid = false;
 }
 
 lockPoint_t ColumnLock :: get(point_t key, char value)
 {
-    return _block_[key.y * _size_ + value - '1'];
+    return _block_[key.x * _size_ + value - '1'];
 }
 
 /**
@@ -47,17 +47,17 @@ lockPoint_t ColumnLock :: get(point_t key, char value)
 
 void RowLock :: set(point_t key, char value)
 {
-    _block_[key.x * _size_ + value - '1'] = lockPoint_t(key, true);
+    _block_[key.y * _size_ + value - '1'] = lockPoint_t(key, true);
 }
 
 void RowLock :: erase(point_t key, char value)
 {
-    _block_[key.x * _size_ + value - '1'].valid = false;
+    _block_[key.y * _size_ + value - '1'].valid = false;
 }
 
 lockPoint_t RowLock :: get(point_t key, char value)
 {
-    return _block_[key.x * _size_ + value - '1'];
+    return _block_[key.y * _size_ + value - '1'];
 }
 
 /**
@@ -66,17 +66,17 @@ lockPoint_t RowLock :: get(point_t key, char value)
 
 void BlockLock :: set(point_t key, char value)
 {
-    _block_[key.x + key.y / 3 + value - '1'] = lockPoint_t(key, true);
+    _block_[((key.y - key.y % 3 + key.x / 3) * _size_) + value - '1'] = lockPoint_t(key, true);
 }
 
 void BlockLock :: erase(point_t key, char value)
 {
-    _block_[key.x + key.y / 3 + value - '1'].valid = false;
+    _block_[((key.y - key.y % 3 + key.x / 3) * _size_) + value - '1'].valid = false;
 }
 
 lockPoint_t BlockLock :: get(point_t key, char value)
 {
-    return _block_[key.x + key.y / 3 + value - '1'];
+    return _block_[((key.y - key.y % 3 + key.x / 3) * _size_) + value - '1'];
 }
 
 /**
@@ -85,15 +85,15 @@ lockPoint_t BlockLock :: get(point_t key, char value)
 
 void ChangeLock :: set(point_t key, char value)
 {
-    _block_[key.x * _size_ + key.y] = lockPoint_t(key, true);
+    _block_[key.y * _size_ + key.x] = lockPoint_t(key, true);
 }
 
 void ChangeLock :: erase(point_t key, char value)
 {
-   _block_[key.x * _size_ + key.y].valid = false;
+   _block_[key.y * _size_ + key.x].valid = false;
 }
 
 lockPoint_t ChangeLock :: get(point_t key, char value)
 {
-    return _block_[key.x * _size_ + key.y];
+    return _block_[key.y * _size_ + key.x];
 }

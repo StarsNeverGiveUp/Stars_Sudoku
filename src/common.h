@@ -10,6 +10,10 @@ typedef struct stPoint
 
     stPoint() : stPoint(0,0){}
     stPoint(int a, int b) : x(a), y(b) {} 
+    bool operator==(const stPoint& rhs)
+    {
+        return x == rhs.x && y == rhs.y;
+    }
 } point_t;
 
 
@@ -17,8 +21,8 @@ typedef struct stLockPoint : public stPoint
 {
     bool valid;
 
-    stLockPoint() : point_t(), valid(false){}
-    stLockPoint(const point_t &p, bool b) : point_t(p), valid(b){}
+    stLockPoint() : stPoint(), valid(false){}
+    stLockPoint(const point_t &p, bool b) : stPoint(p), valid(b){}
 
 } lockPoint_t;
 
@@ -27,6 +31,7 @@ typedef struct stWarningPoint
     bool valid;
     char value;
     point_t key;
+    stWarningPoint() : value(' '), valid(false) {}
 } warningPoint_t;
 
 typedef struct stBoardPoint
@@ -34,7 +39,7 @@ typedef struct stBoardPoint
     char value;
     bool warning;
     Color :: Code color;
-    stBoardPoint() : value(' '), warning(false){};
+    stBoardPoint() : value(' '), warning(false), color(Color :: FG_LIGHT_GREEN){};
 } boardPoint_t;
 
 

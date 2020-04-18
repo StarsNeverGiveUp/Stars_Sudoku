@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Stars\Documents\GitHub\Stars_Sudoku\build\CMakeFiles\5c14711f6f5aac6c0f32b4b326a627fd\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CBCDF00C-1FDC-340F-89F7-CC8E8A9E19EA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

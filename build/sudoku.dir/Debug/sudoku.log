@@ -1,0 +1,265 @@
+﻿cl : 命令行 warning D9002: 忽略未知选项“-std=c++11”
+cl : 命令行 warning D9002: 忽略未知选项“-O0”
+cl : 命令行 warning D9002: 忽略未知选项“-g2”
+cl : 命令行 warning D9002: 忽略未知选项“-ggdb”
+  controller.cpp
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\scene.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\common.h(23,1): warning C4820: “stLockPoint”:“3”字节填充添加在 数据成员“stLockPoint::valid”后
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\common.h(29,16): warning C4820: “stWarningPoint”:“2”字节填充添加在 数据成员“stWarningPoint::value”后
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\common.h(36,24): warning C4820: “stBoardPoint”:“2”字节填充添加在 数据成员“stBoardPoint::warning”后
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\scene.h(35,33): warning C4820: “NormalScene”:“4”字节填充添加在 数据成员“NormalScene::_cursor_”后
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\scene.h(21,27): warning C4365: “参数”: 从“int”转换到“const unsigned __int64”，有符号/无符号不匹配
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\lock.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\lock.h(37,1): warning C4820: “BaseLock”:“4”字节填充添加在 数据成员“BaseLock::_size_”后
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\lock.h(12,24): warning C4365: “参数”: 从“int”转换到“const unsigned __int64”，有符号/无符号不匹配
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\lock.h(12,26): warning C5038: 数据成员“BaseLock::_size_”将在 数据成员“BaseLock::_block_”后初始化
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\logic.h(31,18): warning C4820: “NormalLogic”:“4”字节填充添加在 数据成员“NormalLogic::_blank_”后
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.h(35,26): warning C4820: “NormalController”:“4”字节填充添加在 数据成员“NormalController::_size_”后
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.h(43,1): warning C4820: “NormalController”:“3”字节填充添加在 数据成员“NormalController::_oper_”后
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.h(43,1): warning C4626: “NormalController”: 已将对齐运算符隐式定义为“已删除”
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.h(19,66): warning C5038: 数据成员“NormalController::_scene_”将在 数据成员“NormalController::_logic_”后初始化
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.h(19,82): warning C5038: 数据成员“NormalController::_logic_”将在 数据成员“NormalController::_size_”后初始化
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.cpp(51,22): warning C4388: “<”: 有符号/无符号不匹配
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.cpp(53,31): warning C4365: “参数”: 从“int”转换到“const unsigned __int64”，有符号/无符号不匹配
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.cpp(82,26): warning C4388: “<”: 有符号/无符号不匹配
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.cpp(84,38): warning C4365: “参数”: 从“int”转换到“const unsigned __int64”，有符号/无符号不匹配
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(311,37): warning C4514: “vfwprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(342,41): warning C4514: “vfwprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(373,37): warning C4514: “_vfwprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(387,37): warning C4514: “_vwprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(401,37): warning C4514: “vwprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(414,37): warning C4514: “_vwprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(430,41): warning C4514: “vwprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(445,37): warning C4514: “_vwprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(459,37): warning C4514: “_vwprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(472,37): warning C4514: “_fwprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(491,37): warning C4514: “fwprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(509,37): warning C4514: “_fwprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(530,41): warning C4514: “fwprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(550,37): warning C4514: “_fwprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(569,37): warning C4514: “_fwprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(587,37): warning C4514: “_wprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(605,37): warning C4514: “wprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(622,37): warning C4514: “_wprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(642,41): warning C4514: “wprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(661,37): warning C4514: “_wprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(679,37): warning C4514: “_wprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(728,37): warning C4514: “vfwscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(761,41): warning C4514: “vfwscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(776,37): warning C4514: “_vwscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(790,37): warning C4514: “vwscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(803,37): warning C4514: “_vwscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(819,41): warning C4514: “vwscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(834,37): warning C4514: “_fwscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(853,37): warning C4514: “fwscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(871,37): warning C4514: “_fwscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(892,41): warning C4514: “fwscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(912,37): warning C4514: “_wscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(930,37): warning C4514: “wscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(947,37): warning C4514: “_wscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(967,41): warning C4514: “wscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1094,37): warning C4514: “_vsnwprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1122,37): warning C4514: “_vsnwprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1171,37): warning C4514: “_vswprintf_c”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1223,37): warning C4514: “_vswprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1276,41): warning C4514: “vswprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1323,37): warning C4514: “_vswprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1358,37): warning C4514: “_vscwprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1391,37): warning C4514: “_vscwprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1405,37): warning C4514: “__swprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1425,37): warning C4514: “_swprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1446,37): warning C4514: “_swprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1465,37): warning C4514: “swprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1508,37): warning C4514: “_swprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530,41): warning C4710: “int swprintf_s(wchar_t *const ,const size_t,const wchar_t *const ,...)”: 函数未内联
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1530): message : 参见“swprintf_s”的声明
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1559,37): warning C4514: “_swprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1580,37): warning C4514: “_swprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1600,37): warning C4514: “_swprintf_c_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1621,37): warning C4514: “_swprintf_c”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1641,37): warning C4514: “_snwprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1667,37): warning C4514: “_snwprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1692,37): warning C4514: “_snwprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1714,37): warning C4514: “_snwprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1742,37): warning C4514: “_scwprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761,37): warning C4710: “int _scwprintf(const wchar_t *const ,...)”: 函数未内联
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1761): message : 参见“_scwprintf”的声明
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1779,37): warning C4514: “_scwprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1798,37): warning C4514: “_scwprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1822,24): warning C4514: “swprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1837,34): warning C4514: “vswprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1848,24): warning C4514: “_swprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1863,34): warning C4514: “_vswprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1921,37): warning C4514: “vswscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(1956,41): warning C4514: “vswscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(2019,37): warning C4514: “_swscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(2039,37): warning C4514: “swscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(2058,37): warning C4514: “_swscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(2080,41): warning C4514: “swscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(2101,37): warning C4514: “_snwscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(2127,37): warning C4514: “_snwscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(2152,37): warning C4514: “_snwscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstdio.h(2173,37): warning C4514: “_snwscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(648,37): warning C4514: “vfprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(679,41): warning C4514: “vfprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(710,37): warning C4514: “_vfprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(724,37): warning C4514: “_vprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(738,37): warning C4514: “vprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(751,37): warning C4514: “_vprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(767,41): warning C4514: “vprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(782,37): warning C4514: “_vprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(796,37): warning C4514: “_vprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(809,37): warning C4514: “_fprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(828,37): warning C4514: “fprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(852,37): warning C4514: “_fprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(873,41): warning C4514: “fprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(893,37): warning C4514: “_fprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(912,37): warning C4514: “_fprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(930,37): warning C4514: “_printf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(948,37): warning C4514: “printf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(965,37): warning C4514: “_printf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(985,41): warning C4514: “printf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1004,37): warning C4514: “_printf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1022,37): warning C4514: “_printf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1070,37): warning C4514: “vfscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1104,41): warning C4514: “vfscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1120,37): warning C4514: “_vscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1134,37): warning C4514: “vscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1147,37): warning C4514: “_vscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1163,41): warning C4514: “vscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1178,37): warning C4514: “_fscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1197,37): warning C4514: “fscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1215,37): warning C4514: “_fscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1236,41): warning C4514: “fscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1256,37): warning C4514: “_scanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274,37): warning C4514: “scanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1291,37): warning C4514: “_scanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1311,41): warning C4514: “scanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1469,37): warning C4514: “vsprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1510,41): warning C4514: “vsprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1557,37): warning C4514: “_vsprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1595,37): warning C4514: “_vsnprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1623,41): warning C4514: “vsnprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1668,37): warning C4514: “_vscprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1733,37): warning C4514: “_vsnprintf_c”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1749,37): warning C4514: “_sprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774,37): warning C4514: “sprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1810,37): warning C4514: “_sprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): warning C4710: “int sprintf_s(char *const ,const size_t,const char *const ,...)”: 函数未内联
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833): message : 参见“sprintf_s”的声明
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1862,37): warning C4514: “_sprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1883,37): warning C4514: “_sprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1903,37): warning C4514: “_snprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1940,37): warning C4514: “snprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1961,37): warning C4514: “_snprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1991,37): warning C4514: “_snprintf_c_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2012,37): warning C4514: “_snprintf_c”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2032,37): warning C4514: “_snprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2054,37): warning C4514: “_snprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2082,37): warning C4514: “_scprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100,37): warning C4710: “int _scprintf(const char *const ,...)”: 函数未内联
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2100): message : 参见“_scprintf”的声明
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2117,37): warning C4514: “_scprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2135,37): warning C4514: “_scprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2183,37): warning C4514: “vsscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2244,37): warning C4514: “_sscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263,37): warning C4514: “sscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2281,37): warning C4514: “_sscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2302,41): warning C4514: “sscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2330,37): warning C4514: “_snscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2354,37): warning C4514: “_snscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2378,37): warning C4514: “_snscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2402,37): warning C4514: “_snscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_memcpy_s.h(35,44): warning C4514: “memcpy_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_memcpy_s.h(64,44): warning C4514: “memmove_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_memory.h(100,28): warning C4514: “memchr”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(166,38): warning C4514: “wcsnlen_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(247,40): warning C4514: “_wcstok”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(261,35): warning C4514: “wcstok”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(539,31): warning C4514: “wcschr”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(545,31): warning C4514: “wcspbrk”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(551,31): warning C4514: “wcsrchr”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wstring.h(558,31): warning C4514: “wcsstr”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(371,38): warning C4514: “strnlen_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(504,28): warning C4514: “strchr”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(510,28): warning C4514: “strpbrk”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(516,28): warning C4514: “strrchr”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(522,28): warning C4514: “strstr”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(100,37): warning C4514: “_vcwprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(127,37): warning C4514: “_vcwprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(154,37): warning C4514: “_vcwprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(167,37): warning C4514: “_cwprintf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(185,37): warning C4514: “_cwprintf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(202,37): warning C4514: “_cwprintf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(220,37): warning C4514: “_cwprintf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(237,37): warning C4514: “_cwprintf_p_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(255,37): warning C4514: “_cwprintf_p”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(303,37): warning C4514: “_vcwscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(335,37): warning C4514: “_vcwscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(348,37): warning C4514: “_cwscanf_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(371,37): warning C4514: “_cwscanf”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(393,37): warning C4514: “_cwscanf_s_l”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wconio.h(411,37): warning C4514: “_cwscanf_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wio.h(225,26): warning C4514: “_wopen”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wio.h(238,26): warning C4514: “_wsopen”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wtime.h(185,45): warning C4514: “_wctime”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_wtime.h(192,43): warning C4514: “_wctime_s”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\sys/stat.h(234,39): warning C4514: “fstat”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\sys/stat.h(239,39): warning C4514: “stat”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\wchar.h(180,28): warning C4514: “fwide”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\wchar.h(189,28): warning C4514: “mbsinit”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\wchar.h(209,28): warning C4514: “wmemcmp”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\wchar.h(268,48): warning C4514: “wmemchr”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(290,31): warning C4514: “fpclassify”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(295,31): warning C4514: “fpclassify”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(300,31): warning C4514: “fpclassify”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(305,32): warning C4514: “signbit”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(310,32): warning C4514: “signbit”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(315,32): warning C4514: “signbit”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(320,31): warning C4514: “_fpcomp”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(325,31): warning C4514: “_fpcomp”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(330,31): warning C4514: “_fpcomp”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(808,51): warning C4514: “_chgsignl”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(815,51): warning C4514: “_copysignl”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_math.h(869,51): warning C4514: “_hypotl”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(359,17): warning C4514: “abs”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(364,22): warning C4514: “abs”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(369,19): warning C4514: “div”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(374,20): warning C4514: “div”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\ctype.h(165,37): warning C4514: “__ascii_iswalpha”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\ctype.h(170,37): warning C4514: “__ascii_iswdigit”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\ctype.h(175,37): warning C4514: “__ascii_towlower”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\ctype.h(180,37): warning C4514: “__ascii_towupper”: 未引用的内联函数已移除
+D:\Programs\Windows Kits\10\Include\10.0.18362.0\ucrt\ctype.h(234,28): warning C4514: “_ischartype_l”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\color.h(40,5): warning C4514: “Color::Modifier::Modifier”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\color.h(42,5): warning C4514: “Color::operator <<”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\common.h(21,5): warning C4514: “stLockPoint::stLockPoint”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\scene.h(21,5): warning C4514: “NormalScene::NormalScene”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\lock.h(43,5): warning C4514: “ColumnLock::ColumnLock”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\lock.h(54,5): warning C4514: “RowLock::RowLock”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\lock.h(64,5): warning C4514: “BlockLock::BlockLock”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\lock.h(74,5): warning C4514: “ChangeLock::ChangeLock”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.h(19,5): warning C4514: “NormalController::NormalController”: 未引用的内联函数已移除
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.h(25,10): warning C4514: “NormalController::getCom”: 未引用的内联函数已移除
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(944): warning C4710: “char __cdecl std::basic_ios<char,struct std::char_traits<char> >::widen(char)const __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(944): warning C4710: “class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_ostream<char,struct std::char_traits<char> >::put(char) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(945): warning C4710: “class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_ostream<char,struct std::char_traits<char> >::flush(void) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(113): warning C4710: “void __cdecl std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\vector(1615): warning C4711: 为自动内联扩展选定了函数“void __cdecl std::_Destroy_range<class std::allocator<struct stPoint> >(struct stPoint * __ptr64,struct stPoint * __ptr64 const,class std::allocator<struct stPoint> & __ptr64)”
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(105): warning C4710: “class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_ostream<char,struct std::char_traits<char> >::flush(void) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xmemory(780): warning C4711: 为自动内联扩展选定了函数“void __cdecl std::_Deallocate<16,0>(void * __ptr64,unsigned __int64)”
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xmemory(780): warning C4711: 为自动内联扩展选定了函数“void __cdecl std::_Deallocate<16,0>(void * __ptr64,unsigned __int64)”
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(746): warning C4710: “int __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(753): warning C4710: “__int64 __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const * __ptr64,__int64) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(759): warning C4710: “int __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(767): warning C4710: “void __cdecl std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\ostream(770): warning C4710: “void __cdecl std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xmemory(780): warning C4711: 为自动内联扩展选定了函数“void __cdecl std::_Deallocate<16,0>(void * __ptr64,unsigned __int64)”
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xmemory(780): warning C4711: 为自动内联扩展选定了函数“void __cdecl std::_Deallocate<16,0>(void * __ptr64,unsigned __int64)”
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.cpp(68): warning C4710: “class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 __cdecl std::basic_ostream<char,struct std::char_traits<char> >::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64 (__cdecl*)(class std::basic_ostream<char,struct std::char_traits<char> > & __ptr64)) __ptr64”: 函数未内联
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xmemory(780): warning C4711: 为自动内联扩展选定了函数“void __cdecl std::_Deallocate<16,0>(void * __ptr64,unsigned __int64)”
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.cpp(63): warning C4711: 为自动内联扩展选定了函数“void __cdecl NormalController::undoWarning(void) __ptr64”
+D:\Programs\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xmemory(780): warning C4711: 为自动内联扩展选定了函数“void __cdecl std::_Deallocate<16,0>(void * __ptr64,unsigned __int64)”
+D:\Stars\Documents\GitHub\Stars_Sudoku\src\controller.cpp(44): warning C4711: 为自动内联扩展选定了函数“void __cdecl NormalController::show(void) __ptr64”
+  sudoku.vcxproj -> D:\Stars\Documents\GitHub\Stars_Sudoku\bin\Debug\sudoku.exe

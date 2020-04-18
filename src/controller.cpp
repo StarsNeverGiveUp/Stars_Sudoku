@@ -16,6 +16,7 @@ void NormalController ::doSomething()
     }
     else
     {
+        /* x是列， y是行*/
         switch (_oper_)
         {
         case 's':
@@ -33,6 +34,9 @@ void NormalController ::doSomething()
         case 'a':
             _cursor_.x = (_cursor_.x - 1 + _size_) % _size_;
             _scene_.changeCursor(_cursor_);
+            break;
+        case 'e':
+            erase();
             break;
         case 0x1B:
             exit(0);
@@ -58,14 +62,11 @@ void NormalController :: undoWarning()
 
 void NormalController :: set(char value)
 {
-    if(_warning_.valid)
-    {
-        undoWarning();
-    }
+    erase(); /* 先擦除再写入 */
 
-    if (_logic_.isChangeable(_cursor_, value)) /* 如果这个值无法被改变， 什么都不做*/
+    if (!_logic_.isChangeable(_cursor_, value)) /* 如果这个值无法被改变， 什么都不做*/
     {
-        cout << "初始值!" << endl;
+        cout << "Can't be changed" << endl;
         return;
     }
 
@@ -89,6 +90,32 @@ void NormalController :: set(char value)
         _warning_.valid = true;
         _warning_.value = value;
 
+    }
+}
+
+/**
+ * @biref 用于删除现有的点
+ */
+void NormalController::erase()
+{
+    bool flag = false;
+    
+    if (_warning_.valid)
+    {
+        flag = true;
+        undoWarning();
+    }
+  
+    if (!_logic_.isChangeable(_cursor_)) /* 如果这个值无法被改变， 什么都不做*/
+    {
+        cout << "Can't be changed" << endl;
+        return;
+    }
+
+    if (!(_warning_.key == _cursor_ && flag)) /* 这个点并不是一个warning点, 才需要erase*/
+    {
+        _logic_.erase(_cursor_, _scene_.get(_cursor_));
+        _scene_.erase(_cursor_);
     }
 }
 

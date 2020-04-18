@@ -18,7 +18,8 @@ public:
     NormalLogic(int choice, int size = 9);
     vector<point_t> get(point_t key, char value);
     void set(point_t key, char value);
-    bool isChangeable(point_t key, char value);
+    void erase(point_t key, char value);
+    bool isChangeable(point_t key, char value = '1');
     const string & getInit();
     
     virtual ~NormalLogic(){}
