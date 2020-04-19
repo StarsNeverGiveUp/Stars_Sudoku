@@ -3,6 +3,8 @@
 
 #include "color.h"
 
+#define SIZE 9
+
 typedef struct stPoint
 {
     int x;

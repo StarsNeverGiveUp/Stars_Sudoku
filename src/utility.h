@@ -9,6 +9,11 @@ inline void clear(void)
     system("cls");
 }
 
+inline void pause(void)
+{
+    system("pause");
+}
+
 //not real random,return number between [begin,end]
 inline unsigned int random(int begin, int end)
 {

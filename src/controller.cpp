@@ -1,4 +1,15 @@
 #include "controller.h"
+#include "utility.h"
+
+NormalController :: NormalController(NormalScene & scene, NormalLogic & logic) :
+_size_(SIZE), _blank_(0), _oper_(0), 
+_logic_(logic), _scene_(scene), 
+_cursor_(0,0), _warning_()
+{
+    _blank_ = _logic_.getBlank();
+    _scene_.init(_logic_.getInit());
+    show();
+}
 
 void NormalController ::show()
 {
@@ -46,6 +57,13 @@ void NormalController ::doSomething()
     }
 
     show();
+
+    if(isComplete())
+    {
+        _scene_.showComplete();
+        pause();
+        exit(0);
+    }
 }
 
 void NormalController :: undoWarning()
@@ -72,10 +90,11 @@ void NormalController :: set(char value)
 
     vector<point_t> temp = _logic_.get(_cursor_, value);
 
-    if (temp.size() <= 0)
+    if (temp.size() <= 0) /* 有效值写入 */
     {
         _logic_.set(_cursor_, value);
         _scene_.set(_cursor_, value, Color :: FG_WHITE);
+        --_blank_;
     }
     else
     {
@@ -114,12 +133,26 @@ void NormalController::erase()
 
     if (!(_warning_.key == _cursor_ && flag)) /* 这个点并不是一个warning点, 才需要erase*/
     {
-        _logic_.erase(_cursor_, _scene_.get(_cursor_));
+        char value = _scene_.get(_cursor_);
+
+        if(value == ' ') /* 不为空格才需要 被erase */
+        {
+            return;
+        }
+
+        _logic_.erase(_cursor_, value);
         _scene_.erase(_cursor_);
+        ++_blank_;
     }
 }
 
-void NormalController :: init()
+NormalController&  NormalController :: operator<<(char c)
 {
-    _scene_.init(_logic_.getInit());
+    _oper_ = c;
+    return *this;
+}
+
+bool NormalController :: isComplete()
+{
+    return _blank_ == 0;
 }
