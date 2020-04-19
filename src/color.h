@@ -5,6 +5,7 @@
 
 namespace Color
 {
+
 enum Code
 {
     BOLD = 1,

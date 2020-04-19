@@ -9,12 +9,14 @@ using namespace std;
 
 void NormalScene:: showGreeting()
 {
+    clear();
     cout << "Welcome to play this sudoku game!" << endl;
     return;
 }
 
 void NormalScene :: showChoose()
 {
+    clear();
     cout << "Please input a number to choose game level,as following:" << endl;
     cout << "easy(1)   medium(2)   difficulty(3)" << endl;
 }
@@ -30,6 +32,11 @@ void NormalScene :: showAll()
         printUnderLine(row);
     }
 
+}
+
+void NormalScene :: showComplete()
+{
+    cout << "Victory!!" << endl;
 }
 
 void NormalScene :: changeCursor(const point_t  &curPoint)
@@ -115,4 +122,10 @@ void NormalScene :: init(const string & s)
             set(key, s[i]);
         }
     }
+}
+
+NormalScene & NormalScene :: getInstance()
+{
+    static NormalScene scene;
+    return scene;
 }

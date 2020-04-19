@@ -7,30 +7,27 @@
 #include "logic.h"
 #include "controller.h"
 #include "common.h"
+#include "utility.h"
 
 #include <conio.h>
 
-static const int SIZE = 9;
-
 using namespace std;
-
-istream& operator>>(istream & in, NormalController& controller)
-{
-    in >> controller._oper_;
-    return in;
-}
 
 int main(int argc, char* argv[])
 {
-    NormalScene scene(SIZE);
+    NormalScene & scene = NormalScene :: getInstance();
     
     scene.showGreeting();
-    system("pause");
+    pause();
     scene.showChoose();
 
-    int choice = 0;
+    /**
+     *  choice 必须为 0, 1, 2, 3 这几个数
+     *  其中0 为调试难度
+     */
 
-    while(!(cin >> choice) || choice < 1 || choice > 3)
+    int choice = 0;
+    while(!(cin >> choice) || choice < 0 || choice > 3)
     {
         cout << "please input a valid value!" << endl;
         scene.showChoose();
@@ -39,13 +36,9 @@ int main(int argc, char* argv[])
     NormalLogic logic(choice);
     NormalController controller(scene, logic);
 
-    controller.init();
-    
-    controller.show();
-   
     while(1)
     {
-        controller.getCom(_getch());
+        controller << getch();
         controller.doSomething();
     }
 

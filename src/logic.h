@@ -4,32 +4,28 @@
 #include "scene.h"
 #include "lock.h"
 
-class BaseLogic
-{
-public:
-    virtual ~BaseLogic(){}
-};
-
-
-class NormalLogic : public BaseLogic
+class NormalLogic
 {
 public:
 
-    NormalLogic(int choice, int size = 9);
+    NormalLogic(int choice, int size = SIZE);
+
     vector<point_t> get(point_t key, char value);
     void set(point_t key, char value);
     void erase(point_t key, char value);
+
     bool isChangeable(point_t key, char value = '1');
     const string & getInit();
+    int getBlank();
     
-    virtual ~NormalLogic(){}
-
 private:
 
     int level;
     int _size_;
     int _blank_;
+
     string _init_;
+
     ColumnLock Clock;
     RowLock Rlock;
     BlockLock Block;
@@ -37,8 +33,6 @@ private:
 
     void randomErase();
     void initLock();
-    
-    
 };
 
 #endif

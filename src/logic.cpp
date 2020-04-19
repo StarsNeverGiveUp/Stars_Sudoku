@@ -5,10 +5,14 @@
 
 NormalLogic :: NormalLogic(int choice, int size) 
 : level(choice), _size_(size), _blank_(0),
-  Rlock(size), Clock(size), Block(size), Chlock(size)
+  _init_(),
+  Clock(size), Rlock(size), Block(size), Chlock(size)
 {
     switch(choice)
     {
+        case 0 :
+            _blank_ = 1;
+            break;
         case 1 :
             _blank_ = 20;
             break;
@@ -151,4 +155,9 @@ void NormalLogic :: initLock()
 const string & NormalLogic :: getInit()
 {
     return _init_;
+}
+
+int NormalLogic :: getBlank()
+{
+    return _blank_;
 }
